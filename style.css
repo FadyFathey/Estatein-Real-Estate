@@ -17,6 +17,10 @@ body {
 
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* start header  */
 
 
@@ -133,4 +137,144 @@ form button {
     .navbar-nav .nav-item {
         padding-right: 24px;
     }
+}
+
+/* start hero section */
+.hero-p {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(153, 153, 153, 1);
+
+}
+
+.hero-sec-btn {
+    background-color: rgba(112, 59, 247, 1);
+}
+
+.cards span {
+    color: rgba(153, 153, 153, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cards .hero-card {
+    padding: 20px 14px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    background-color: rgba(26, 26, 26, 1);
+    border-radius: 10px;
+
+}
+
+.cards .hero-card h5 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    .cards .hero-card h5 {
+        font-size: 24px;
+    }
+
+    .cards span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .cards .hero-card h5 {
+        font-size: 30px;
+    }
+
+    .cards span {
+        font-size: 16px;
+    }
+}
+
+/* start Key Features */
+.key-features img.img-fluid {
+    width: 24px;
+}
+
+.key-features {
+    padding: 20px;
+}
+
+.key-features span {
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.Key-features-text {
+    border: 1px solid rgba(38, 38, 38, 1);
+    background-color: rgba(26, 26, 26, 1);
+    border-radius: 10px;
+}
+
+.custom-h-p {
+    padding: 30px 20px;
+}
+
+.h-arrow-img {
+    padding: 20px 15px 0 0;
+}
+
+.box {
+    --n: 2;
+    --d: 8deg;
+    --t: 5px;
+    --c: rgba(166, 133, 250, 1);
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-bottom: 20px;
+
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: var(--t);
+    background: var(--c);
+    mask:
+        linear-gradient(#0000 0 0) content-box,
+        repeating-conic-gradient(from calc(var(--d) / 2),
+            #000 0 calc(239deg / var(--n) - var(--d)),
+            #0000 0 calc(360deg / var(--n)));
+    mask-composite: intersect;
+    transform: rotate(61deg);
+    opacity: 0.5;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: -11px;
+    top: -12px;
+    bottom: -10px;
+    right: -13px;
+    border-radius: 50%;
+    padding: var(--t);
+    background: var(--c);
+    mask: linear-gradient(#0000 0 0) content-box, repeating-conic-gradient(from calc(var(--d) / 2), #000 0 calc(239deg / var(--n) - var(--d)), #0000 0 calc(360deg / var(--n)));
+    mask-composite: intersect;
+    transform: rotate(-24deg);
+    opacity: 0.5;
+}
+
+
+.box img {
+    width: 40px;
+    height: auto;
+    position: relative;
+    z-index: 2;
 }
