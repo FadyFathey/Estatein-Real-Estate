@@ -2,12 +2,19 @@
 
 :root {
     --bg-color: rgba(20, 20, 20, 1);
+    --p-color: rgba(153, 153, 153, 1);
+    --btn-bg: rgba(26, 26, 26, 1);
+    --border-color: rgba(38, 38, 38, 1);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -271,10 +278,165 @@ form button {
     opacity: 0.5;
 }
 
-
 .box img {
     width: 40px;
     height: auto;
     position: relative;
     z-index: 2;
+}
+
+/* start Featured Properties */
+.featured-properties h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media (max-width:767px) {
+    .featured-properties h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .featured-properties h1 {
+        font-size: 38px;
+    }
+}
+
+.featured-properties p {
+    color: var(--p-color);
+    font-size: 15px;
+}
+
+.featured-properties a.view-all {
+    padding: 18px 24px;
+    background-color: var(--btn-bg);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.feat {
+    border-radius: 28px;
+    background-color: var(--btn-bg);
+    padding: 10px;
+}
+
+.feat span {
+    color: white;
+    font-size: 15px;
+}
+
+.feat img {
+    width: 15px;
+
+}
+
+.featured-properties-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.card-features {
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.cards a {
+    padding: 18px 24px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(112, 59, 247, 1);
+}
+
+.price {
+    justify-content: space-between;
+}
+
+.mobile-btns {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .cards img {
+        margin-bottom: 10px;
+    }
+
+    .cards .feat {
+        display: flex;
+        justify-content: center;
+    }
+
+    .feat img {
+        margin: auto 3px;
+    }
+
+    .featured-properties-card {
+        padding: 15px;
+        width: 350px;
+        margin: auto;
+    }
+
+    .mobile-btns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .featured-properties a.mobile-btn {
+        padding: 20px;
+        background-color: var(--btn-bg);
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid var(--border-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navigation img.sec {
+        background-color: var(--btn-bg);
+
+    }
+
+    .mobile-btn-num {
+        color: rgba(153, 153, 153, 1);
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .featured-properties-card {
+        padding: 20px;
+    }
+
+    .cards {
+        text-align: center;
+    }
+
+    .card-features {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .price {
+        justify-content: space-around;
+    }
 }
