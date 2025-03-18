@@ -561,3 +561,114 @@ form button {
     display: inline-block;
     margin-top: 12px;
 }
+
+/* start Explore Properties */
+.cta {
+    background-image: url('assets/cta-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    border-top: 1px solid var(--border-color);
+
+
+}
+
+.cta .container {
+    padding: 60px 0;
+}
+
+.cta h1 {
+    font-size: 38px;
+    font-weight: 600;
+    color: white;
+}
+
+.cta p {
+    max-width: 979px;
+    color: rgba(153, 153, 153, 1);
+    margin-top: 10px;
+}
+
+.cta a {
+    background-color: rgba(112, 59, 247, 1);
+    padding: 14px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.border-dark-custom {
+    border-color: rgba(38, 38, 38, 1) !important;
+}
+
+.footer {
+    background-color: #111111;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-logo {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+
+.footer-nav-title {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.footer-nav-link {
+    color: #aaa;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s;
+}
+
+.footer-nav-link:hover {
+    color: white;
+}
+
+.newsletter-form {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-input {
+    background-color: #222;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: white;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.newsletter-input:focus {
+    outline: none;
+    background-color: #2a2a2a;
+}
+
+.send-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.message-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-col {
+        margin-bottom: 2rem;
+    }
+}
