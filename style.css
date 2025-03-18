@@ -420,6 +420,8 @@ form button {
     .mobile-btn-num {
         color: rgba(153, 153, 153, 1);
     }
+
+
 }
 
 @media (min-width:768px) and (max-width:991px) {
@@ -439,4 +441,112 @@ form button {
     .price {
         justify-content: space-around;
     }
+}
+
+/* start testimonials */
+.testimonials {
+    margin-top: 100px;
+}
+
+.testimonials h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media (max-width:767px) {
+    .testimonials h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .testimonials h1 {
+        font-size: 38px;
+    }
+}
+
+.testimonials p {
+    color: var(--p-color);
+    font-size: 15px;
+}
+
+.testimonials a.view-all {
+    padding: 18px 24px;
+    background-color: var(--btn-bg);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+
+}
+
+.testimonials-card .holder {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.testimonials .testimonials-card h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonials-card p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.stars img {
+    background-color: #80808024;
+    border-color: #80808024 !important;
+}
+
+.testimonials-span {
+    color: rgba(153, 153, 153, 1);
+}
+
+.des-navigation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.des-nav-img {
+    background-color: #80808024;
+}
+
+.phone-btn-num {
+    color: rgba(153, 153, 153, 1);
+}
+
+@media (max-width:767px) {
+    .des-navigation {
+        display: none;
+    }
+
+    .testimonials a.mobile-btn {
+        padding: 20px;
+        background-color: var(--btn-bg);
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid var(--border-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
