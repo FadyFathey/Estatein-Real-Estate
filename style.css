@@ -469,6 +469,7 @@ form button {
 .testimonials p {
     color: var(--p-color);
     font-size: 15px;
+    max-width: 800px;
 }
 
 .testimonials a.view-all {
@@ -549,4 +550,14 @@ form button {
         align-items: center;
     }
 
+}
+
+.red-more-test {
+    padding: 14px 20px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #80808024;
+    display: inline-block;
+    margin-top: 12px;
 }
