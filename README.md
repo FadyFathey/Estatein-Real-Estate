@@ -11,6 +11,7 @@ Estatein is a modern and responsive real estate website designed to help users d
 - **FAQ Section**: Provides answers to common questions.
 - **Call-to-Action (CTA)**: Encourages users to explore properties or contact the team.
 - **Responsive Design**: Optimized for all devices, including desktops, tablets, and mobile phones.
+- **Animations**: Smooth animations powered by AOS (Animate On Scroll) library for an enhanced user experience.
 
 ## Technologies Used
 
@@ -18,6 +19,7 @@ Estatein is a modern and responsive real estate website designed to help users d
 - **CSS3**: For styling and layout.
 - **Bootstrap 5**: For responsive design and prebuilt components.
 - **JavaScript**: For interactivity and dynamic behavior.
+- **AOS (Animate On Scroll)**: For adding scroll-based animations.
 
 ## Installation
 
@@ -29,7 +31,11 @@ Estatein is a modern and responsive real estate website designed to help users d
    ```bash
    cd estatein-real-estate-website
    ```
-3. Open `index.html` in your browser to view the website.
+3. Install dependencies for AOS:
+   ```bash
+   npm install aos
+   ```
+4. Open `index.html` in your browser to view the website.
 
 ## Folder Structure
 
@@ -60,5 +66,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any inquiries or support, please contact:
 
-- **Email**: support@estatein.com
+- **Email**: fadyfathymaher3@gmail.com
 - **Website**: [Estatein](https://www.estatein.com)
