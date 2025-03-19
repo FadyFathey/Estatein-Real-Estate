@@ -1,6 +1,5 @@
 # Estatein Real Estate Website
-
-Estatein is a modern and responsive real estate website designed to help users discover their dream properties. This project showcases a clean and user-friendly interface, featuring property listings, testimonials, FAQs, and more. The project is 100% coded by me and is based on a Figma design file, ensuring originality and creativity without copying from anyone.
+Estatein is a modern and responsive real estate website designed to help users discover their dream properties. This project showcases a clean and user-friendly interface, featuring property listings, testimonials, FAQs, and more. The project is 100% coded by me and is based on a Figma design file, ensuring originality and creativity without copying from anyone. Additionally, the website is 100% pixel-perfect, ensuring precise alignment and design consistency.
 
 
 # Estatein Demo
